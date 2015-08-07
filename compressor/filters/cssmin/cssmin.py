@@ -110,7 +110,7 @@ def remove_unnecessary_whitespace(css):
         :returns: str
         """
 
-        regex = re.compile(r"calc\(([0-9a-zA-Z*%\/\s+\-]*)\)")
+        regex = re.compile(r"calc\(([0-9a-zA-Z*.%\/\s+\-]*)\)")
         match = regex.search(css)
 
         i = 0   # iterator to assure unique dict value
